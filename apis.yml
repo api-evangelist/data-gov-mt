@@ -1,0 +1,66 @@
+aid: data-gov-mt
+name: data.gov.mt (Open Data Malta)
+description: >-
+  data.gov.mt is the national government open-data portal for Malta, operated by MITA (Malta Information
+  Technology Agency) as a bespoke "Shared Data Governance and Data Management Platform" with a JavaScript
+  single-page-app front end (served at portal.data.gov.mt / open.data.gov.mt). It is DCAT-AP-compliant
+  for EU harvesting (~230+ datasets) but exposes no publicly documented JSON catalog API. Malta's
+  geospatial APIs are available separately via the MSDI geoportal.
+kind: government
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/data-gov-mt/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - Custom Platform
+  - DCAT-AP
+  - Government Data
+  - National Government
+  - Malta
+  - Europe
+created: '2026-06-23'
+modified: '2026-06-23'
+specificationVersion: '0.19'
+apis:
+  - aid: data-gov-mt:portal
+    name: Open Data Malta Portal
+    description: >-
+      Bespoke MITA-built open-data portal (JS SPA) at portal.data.gov.mt / open.data.gov.mt. The catalog
+      is DCAT-AP-compliant and harvested into data.europa.eu (~230+ datasets across sectors such as
+      planning and statistics), but no public, documented JSON/REST catalog API was located; the SPA
+      calls an undocumented internal backend. Standard CKAN paths 404 (it is not CKAN).
+    humanURL: https://portal.data.gov.mt/
+    baseURL: https://portal.data.gov.mt/
+    tags:
+      - Open Data
+      - Catalog
+      - DCAT-AP
+      - SPA
+    properties:
+      - type: Website
+        url: https://portal.data.gov.mt/
+      - type: x-dcat-harvest
+        url: https://data.europa.eu/data/datasets?catalog=data-gov-mt
+  - aid: data-gov-mt:msdi
+    name: Malta Spatial Data Infrastructure (MSDI) geoportal
+    description: >-
+      Malta's INSPIRE / geospatial stack exposing standard OGC services (GeoNetwork CSW, GeoServer
+      WMS/WFS, ArcGIS). Distinct from the national open-data catalog.
+    humanURL: https://msdi.data.gov.mt/
+    baseURL: https://msdi.data.gov.mt/
+    tags:
+      - Geospatial
+      - INSPIRE
+      - OGC
+      - WMS
+      - WFS
+    properties:
+      - type: Website
+        url: https://msdi.data.gov.mt/
+common:
+  - type: Website
+    url: https://portal.data.gov.mt/
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

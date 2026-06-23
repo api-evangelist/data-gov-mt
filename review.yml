@@ -1,0 +1,22 @@
+name: data.gov.mt
+description: Open Data Malta portal/API assessment for APIs.json cataloging.
+url: https://raw.githubusercontent.com/api-evangelist/data-gov-mt/refs/heads/main/review.yml
+created: '2026-06-23'
+modified: '2026-06-23'
+reviews:
+  - date: '2026-06-23'
+    rating: 2
+    summary: >-
+      Malta's national open-data portal is bespoke MITA-built software (a JS SPA at portal.data.gov.mt /
+      open.data.gov.mt), DCAT-AP-compliant and harvested into data.europa.eu (~230+ datasets). It is not
+      CKAN/DKAN/OpenDataSoft, which is why guessed CKAN paths 404. No public, documented JSON/REST catalog
+      API could be located, and all hosts sit behind a Cloudflare JS anti-bot challenge returning HTTP 403
+      to both curl and WebFetch, so no endpoint or payload was directly verifiable. Malta's INSPIRE/MSDI
+      geoportal does expose standard OGC services but is distinct from the open-data catalog.
+    endpoints:
+      - url: https://portal.data.gov.mt/
+        status: blocked
+        note: Portal home (SPA); Cloudflare 403 to non-browser clients.
+      - url: https://msdi.data.gov.mt/
+        status: noted
+        note: Separate INSPIRE/geospatial stack (GeoNetwork/GeoServer/ArcGIS), not the open-data catalog.
