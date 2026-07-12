@@ -57,6 +57,10 @@ apis:
       - type: Website
         url: https://msdi.data.gov.mt/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/data-gov-mt-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/data-gov-mt-domain-security.yml
   - type: Website
     url: https://portal.data.gov.mt/
   - type: Review

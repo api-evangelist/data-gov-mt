@@ -1,0 +1,21 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: portal.data.gov.mt
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  1 09:12:31 2026 GMT
+  hsts: null
+- host: msdi.data.gov.mt
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  1 09:12:31 2026 GMT
+  hsts: null
+domains:
+- domain: data.gov.mt
+  dnssec: true
+  caa:
+  - cloudproxy.gov.mt.
+  spf: false
+  dmarc: false
