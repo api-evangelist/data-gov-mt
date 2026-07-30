@@ -7,7 +7,18 @@ description: >-
   for EU harvesting (~230+ datasets) but exposes no publicly documented JSON catalog API. Malta's
   geospatial APIs are available separately via the MSDI geoportal.
 kind: government
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/data-gov-mt.png
 url: https://raw.githubusercontent.com/api-evangelist/data-gov-mt/refs/heads/main/apis.yml
 tags:
   - Open Data
