@@ -45,6 +45,11 @@ apis:
       - Open Data
       - Catalog
       - DCAT-AP
+      - Spa
+    tags_raw:
+      - Open Data
+      - Catalog
+      - DCAT-AP
       - SPA
     properties:
       - type: Website
