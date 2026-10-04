@@ -51,12 +51,11 @@ apis:
       planning and statistics), but no public, documented JSON/REST catalog API was located; the SPA
       calls an undocumented internal backend. Standard CKAN paths 404 (it is not CKAN).
     humanURL: https://portal.data.gov.mt/
-    baseURL: https://portal.data.gov.mt/
     tags:
       - Open Data
       - Catalog
       - DCAT-AP
-      - Spa
+      - SPA
     tags_raw:
       - Open Data
       - Catalog
