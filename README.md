@@ -1,4 +1,4 @@
-# data.gov.mt (data-gov-mt)
+# data.gov.mt (Open Data Malta)
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,23 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-data.gov.mt (Open Data Malta) is Malta's national government open-data portal, built by **MITA** as a bespoke "Shared Data Governance" platform (JS SPA at portal.data.gov.mt / open.data.gov.mt). It is **not** CKAN.
+data.gov.mt is the national government open-data portal for Malta, operated by MITA (Malta Information Technology Agency) as a bespoke "Shared Data Governance and Data Management Platform" with a JavaScript single-page-app front end (served at portal.data.gov.mt / open.data.gov.mt). It is DCAT-AP-compliant for EU harvesting (~230+ datasets) but exposes no publicly documented JSON catalog API. Malta's geospatial APIs are available separately via the MSDI geoportal.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/data-gov-mt/refs/heads/main/apis.yml)
+**Areas:** Open Data · Custom Platform · DCAT-AP · Government Data · National Government · Malta · Europe
 
-## Type
-- **kind:** government  ·  **software:** custom (MITA platform, DCAT-AP)
+## data.gov.mt (Open Data Malta) on APIs.io
 
-## API
-- **Open Data Malta Portal** — `https://portal.data.gov.mt/`. DCAT-AP-compliant, harvested into data.europa.eu (~230+ datasets).
-- **MSDI geoportal** — `https://msdi.data.gov.mt/` exposes standard OGC geospatial services (GeoNetwork CSW, GeoServer WMS/WFS, ArcGIS), distinct from the open-data catalog.
-- **Note:** no public, documented JSON/REST catalog API was located; the SPA calls an undocumented internal backend, and all hosts sit behind a Cloudflare anti-bot challenge (HTTP 403 to non-browser clients). A machine-readable surface would need to come from the DCAT-AP feed or browser-captured XHR calls.
+Everything profiled for data.gov.mt (Open Data Malta) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/data-gov-mt/](https://apis.io/providers/data-gov-mt/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
-- **Created:** 2026-06-23
-- **Modified:** 2026-06-23
+### APIs (2)
 
-## Maintainers
-**FN:** Kin Lane
+- [Open Data Malta Portal](https://apis.io/apis/data-gov-mt/portal/) — Bespoke MITA-built open-data portal (JS SPA) at portal.data.gov.mt / open.data.gov.mt. The catalog is DCAT-AP-compliant and harvested into data.europa.eu…
+- [Malta Spatial Data Infrastructure (MSDI) geoportal](https://apis.io/apis/data-gov-mt/msdi/) — Malta's INSPIRE / geospatial stack exposing standard OGC services (GeoNetwork CSW, GeoServer WMS/WFS, ArcGIS). Distinct from the national open-data catalog.
 
-**Email:** kin@apievangelist.com
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Data Gov Mt Domain Security](https://apis.io/security/data-gov-mt/data-gov-mt-domain-security/)
+- [Data Gov Mt Vulnerability Disclosure](https://apis.io/security/data-gov-mt/data-gov-mt-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://portal.data.gov.mt/)
+
+## API Evangelist rating
+
+**Kin Score 5.5** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/data-gov-mt/](https://apis.io/providers/data-gov-mt/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for data.gov.mt (Open Data Malta): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/data-gov-mt/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
